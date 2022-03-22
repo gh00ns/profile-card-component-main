@@ -1,0 +1,141 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"); /* font-family: 'Kumbh Sans', sans-serif; */
+
+/* COLORS */
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* CODE */
+
+body {
+  background-color: var(--Dark-cyan);
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 87%;
+  margin: 147px auto;
+  border-radius: 13px;
+  height: 373px;
+}
+
+.container .container__img {
+  background: url(./images/bg-pattern-card.svg);
+  width: 100%;
+  height: 140px;
+  position: relative;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.container .propic__img {
+  background: url(./images/image-victor.jpg) no-repeat center;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+  margin: 87px;
+  position: absolute;
+}
+
+.personal__info {
+  margin-top: 72px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.personal__info .age {
+  margin-left: 5px;
+  color: var(--Dark-gray);
+}
+
+.personal__info p {
+  display: flex;
+  justify-content: center;
+  margin: 9px auto;
+  font-size: 14px;
+  color: var(--Dark-grayish-blue);
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid;
+  border-color: var(--Dark-gray);
+  opacity: 25%;
+  height: 5px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.stats {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+.stats div h4 {
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.stats div p {
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: var(--Dark-gray);
+}
+
+.stats .followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78.75px;
+  padding-right: 25px;
+}
+
+.stats .likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78.75px;
+  padding-left: 0;
+}
+
+.stats .photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78.75px;
+  padding-left: 25px;
+}
+
+/* ATTRIBUTIONS */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
