@@ -23,6 +23,28 @@ img {
 
 /* CODE */
 
+.top {
+  position: absolute;
+  background: url(./images/bg-pattern-top.svg);
+  background-size: contain;
+  height: 978px;
+  width: 978px;
+  z-index: -1;
+  top: -535px;
+  left: -285px;
+}
+
+.bottom {
+  position: absolute;
+  background: url(./images/bg-pattern-bottom.svg);
+  background-size: contain;
+  height: 978px;
+  width: 978px;
+  z-index: -1;
+  top: 350px;
+  left: 692px;
+}
+
 body {
   background-color: var(--Dark-cyan);
   font-size: 18px;
@@ -35,7 +57,7 @@ body {
   align-items: center;
   background-color: white;
   width: 87%;
-  margin: 147px auto;
+  margin: auto;
   border-radius: 13px;
   height: 373px;
 }
@@ -138,4 +160,10 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 350px;
+  }
 }
